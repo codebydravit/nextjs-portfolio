@@ -158,7 +158,6 @@ export default function Projects() {
                     animate={{ opacity: 1, y: 0 }}
                     className="absolute inset-0 bg-black/80 flex items-center justify-center p-6"
                   >
-                    <div className="text-center text-white dark:text-white light:text-white">
                     <div className="text-center text-white">
                       <h4 className="text-lg font-semibold mb-2">Quick Preview</h4>
                       <p className="text-sm text-gray-200 mb-4">
