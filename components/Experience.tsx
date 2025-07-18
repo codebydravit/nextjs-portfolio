@@ -107,6 +107,7 @@ export default function Experience() {
                         <MapPin size={14} className="hidden md:flex mr-1" />
                         {experience.location}
                       </div>
+                      </div>
                     </div>
                   </div>
                   
