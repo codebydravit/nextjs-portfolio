@@ -106,10 +106,10 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-white light:text-blue-900 mb-6">
-            Skills & <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">Technologies</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-6">
+            Skills & <span className="text-blue-600 dark:text-purple-400">Technologies</span>
           </h2>
-          <div className="w-20 h-1 bg-purple-400 dark:bg-purple-400 light:bg-blue-600 mx-auto"></div>
+          <div className="w-20 h-1 bg-blue-600 dark:bg-purple-400 mx-auto"></div>
         </motion.div>
 
         {/* Category Tabs */}
@@ -120,15 +120,15 @@ export default function Skills() {
           viewport={{ once: true }}
           className="flex justify-center mb-12"
         >
-          <div className="flex bg-slate-800/50 dark:bg-slate-800/50 light:bg-blue-100/80 rounded-xl p-2 border border-slate-700 dark:border-slate-700 light:border-blue-200">
+          <div className="flex bg-blue-100/80 dark:bg-slate-800/50 rounded-xl p-2 border border-blue-200 dark:border-slate-700">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
                 className={`flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                   activeCategory === category.id
-                    ? 'bg-purple-600 dark:bg-purple-600 light:bg-blue-600 text-white shadow-lg'
-                    : 'text-gray-300 hover:text-white hover:bg-slate-700 dark:text-gray-300 dark:hover:text-white dark:hover:bg-slate-700 light:text-blue-700 light:hover:text-blue-900 light:hover:bg-blue-200'
+                    ? 'bg-blue-600 dark:bg-purple-600 text-white shadow-lg'
+                    : 'text-blue-700 hover:text-blue-900 hover:bg-blue-200 dark:text-gray-300 dark:hover:text-white dark:hover:bg-slate-700'
                 }`}
               >
                 <span>{category.icon}</span>
@@ -148,19 +148,19 @@ export default function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-slate-900/50 dark:bg-slate-900/50 light:bg-white/80 p-6 rounded-xl border border-slate-700 dark:border-slate-700 light:border-blue-200"
+                className="bg-white/80 dark:bg-slate-900/50 p-6 rounded-xl border border-blue-200 dark:border-slate-700"
               >
-                <h3 className="text-xl font-semibold text-white dark:text-white light:text-blue-900 mb-6">{category.title}</h3>
+                <h3 className="text-xl font-semibold text-blue-900 dark:text-white mb-6">{category.title}</h3>
                 <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skill.name}>
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-gray-300 dark:text-gray-300 light:text-blue-700">{skill.name}</span>
-                        <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">{skill.level}%</span>
+                        <span className="text-blue-700 dark:text-gray-300">{skill.name}</span>
+                        <span className="text-blue-600 dark:text-purple-400">{skill.level}%</span>
                       </div>
-                      <div className="w-full bg-slate-700 dark:bg-slate-700 light:bg-blue-200 rounded-full h-2">
+                      <div className="w-full bg-blue-200 dark:bg-slate-700 rounded-full h-2">
                         <motion.div
-                          className="bg-gradient-to-r from-purple-500 to-blue-500 dark:from-purple-500 dark:to-blue-500 light:from-blue-500 light:to-blue-600 h-2 rounded-full"
+                          className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-purple-500 dark:to-blue-500 h-2 rounded-full"
                           initial={{ width: 0 }}
                           whileInView={{ width: `${skill.level}%` }}
                           transition={{ duration: 1, delay: skillIndex * 0.1 }}
@@ -183,19 +183,19 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="md:col-span-2 lg:col-span-3 bg-slate-900/50 dark:bg-slate-900/50 light:bg-white/80 p-8 rounded-xl border border-slate-700 dark:border-slate-700 light:border-blue-200"
+              className="md:col-span-2 lg:col-span-3 bg-white/80 dark:bg-slate-900/50 p-8 rounded-xl border border-blue-200 dark:border-slate-700"
             >
-              <h3 className="text-2xl font-semibold text-white dark:text-white light:text-blue-900 mb-8 text-center">🤝 Soft Skills</h3>
+              <h3 className="text-2xl font-semibold text-blue-900 dark:text-white mb-8 text-center">🤝 Soft Skills</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {softSkills.map((skill, skillIndex) => (
                   <div key={skill.name}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-300 dark:text-gray-300 light:text-blue-700">{skill.name}</span>
-                      <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">{skill.level}%</span>
+                      <span className="text-blue-700 dark:text-gray-300">{skill.name}</span>
+                      <span className="text-blue-600 dark:text-purple-400">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-slate-700 dark:bg-slate-700 light:bg-blue-200 rounded-full h-2">
+                    <div className="w-full bg-blue-200 dark:bg-slate-700 rounded-full h-2">
                       <motion.div
-                        className="bg-gradient-to-r from-purple-500 to-blue-500 dark:from-purple-500 dark:to-blue-500 light:from-blue-500 light:to-blue-600 h-2 rounded-full"
+                        className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-purple-500 dark:to-blue-500 h-2 rounded-full"
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1, delay: skillIndex * 0.1 }}
@@ -217,7 +217,7 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h3 className="text-2xl font-semibold text-white dark:text-white light:text-blue-900 mb-8">Technologies I Work With</h3>
+          <h3 className="text-2xl font-semibold text-blue-900 dark:text-white mb-8">Technologies I Work With</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {technologies.map((tech, index) => (
               <motion.span
@@ -226,7 +226,7 @@ export default function Skills() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="bg-slate-800 dark:bg-slate-800 light:bg-blue-200 text-white dark:text-white light:text-blue-900 px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-600 dark:hover:bg-purple-600 light:hover:bg-blue-400 light:hover:text-white transition-colors duration-300 cursor-default"
+                className="bg-blue-200 dark:bg-slate-800 text-blue-900 dark:text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-400 hover:text-white dark:hover:bg-purple-600 transition-colors duration-300 cursor-default"
               >
                 {tech}
               </motion.span>

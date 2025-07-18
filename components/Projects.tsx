@@ -88,7 +88,7 @@ export default function Projects() {
     : projects.filter(project => project.categories.includes(activeFilter));
 
   return (
-    <section id="projects" className="py-20 bg-slate-800/50 dark:bg-slate-800/50 light:bg-blue-50/80">
+    <section id="projects" className="py-20 bg-blue-50/80 dark:bg-slate-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -97,10 +97,10 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-white light:text-blue-900 mb-6">
-            Featured <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">Projects</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-6">
+            Featured <span className="text-blue-600 dark:text-purple-400">Projects</span>
           </h2>
-          <div className="w-20 h-1 bg-purple-400 dark:bg-purple-400 light:bg-blue-600 mx-auto"></div>
+          <div className="w-20 h-1 bg-blue-600 dark:bg-purple-400 mx-auto"></div>
         </motion.div>
 
         {/* Filter Chips */}
@@ -117,13 +117,13 @@ export default function Projects() {
               onClick={() => setActiveFilter(category.id)}
               className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all duration-300 ${
                 activeFilter === category.id
-                  ? 'bg-purple-600 dark:bg-purple-600 light:bg-blue-600 text-white shadow-lg scale-105'
-                  : 'bg-slate-800 dark:bg-slate-800 light:bg-blue-200 text-gray-300 dark:text-gray-300 light:text-blue-700 hover:bg-slate-700 dark:hover:bg-slate-700 light:hover:bg-blue-300 hover:text-white dark:hover:text-white light:hover:text-blue-900 border border-slate-600 dark:border-slate-600 light:border-blue-300'
+                  ? 'bg-blue-600 dark:bg-purple-600 text-white shadow-lg scale-105'
+                  : 'bg-blue-200 dark:bg-slate-800 text-blue-700 dark:text-gray-300 hover:bg-blue-300 hover:text-blue-900 dark:hover:bg-slate-700 dark:hover:text-white border border-blue-300 dark:border-slate-600'
               }`}
             >
               {category.label}
               <span className={`text-xs px-2 py-1 rounded-full ${
-                activeFilter === category.id ? 'bg-purple-700 dark:bg-purple-700 light:bg-blue-700' : 'bg-slate-700 dark:bg-slate-700 light:bg-blue-300'
+                activeFilter === category.id ? 'bg-blue-700 dark:bg-purple-700' : 'bg-blue-300 dark:bg-slate-700'
               }`}>
                 {category.count}
               </span>
@@ -139,7 +139,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-slate-900/50 dark:bg-slate-900/50 light:bg-white/90 rounded-xl overflow-hidden border border-slate-700 dark:border-slate-700 light:border-blue-200 hover:border-purple-500 dark:hover:border-purple-500 light:hover:border-blue-400 transition-all duration-300 group"
+              className="bg-white/90 dark:bg-slate-900/50 rounded-xl overflow-hidden border border-blue-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-purple-500 transition-all duration-300 group"
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
@@ -159,15 +159,16 @@ export default function Projects() {
                     className="absolute inset-0 bg-black/80 flex items-center justify-center p-6"
                   >
                     <div className="text-center text-white dark:text-white light:text-white">
+                    <div className="text-center text-white">
                       <h4 className="text-lg font-semibold mb-2">Quick Preview</h4>
-                      <p className="text-sm text-gray-300 dark:text-gray-300 light:text-gray-200 mb-4">
+                      <p className="text-sm text-gray-200 mb-4">
                         {project.description.substring(0, 120)}...
                       </p>
                       <div className="flex flex-wrap gap-2 justify-center">
                         {project.technologies.slice(0, 3).map((tech, idx) => (
                           <span
                             key={idx}
-                            className="bg-purple-600 dark:bg-purple-600 light:bg-blue-600 text-white px-2 py-1 rounded-full text-xs"
+                            className="bg-blue-600 dark:bg-purple-600 text-white px-2 py-1 rounded-full text-xs"
                           >
                             {tech}
                           </span>
@@ -184,18 +185,18 @@ export default function Projects() {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white dark:text-white light:text-blue-900 mb-3">{project.title}</h3>
+                <h3 className="text-xl font-semibold text-blue-900 dark:text-white mb-3">{project.title}</h3>
                 {false && // This completely removes it from the DOM.
-                <div className="text-purple-400 dark:text-purple-400 light:text-blue-600 text-sm mb-2">{project.period}</div>}
-                <p className="text-gray-300 dark:text-gray-300 light:text-blue-700 mb-4 text-sm leading-relaxed">{project.description}</p>
+                <div className="text-blue-600 dark:text-purple-400 text-sm mb-2">{project.period}</div>}
+                <p className="text-blue-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">{project.description}</p>
                 
                 {project.responsibilities && (
                   <div className="mb-4">
-                    <h4 className="text-white dark:text-white light:text-blue-900 font-medium text-sm mb-2">Key Responsibilities:</h4>
+                    <h4 className="text-blue-900 dark:text-white font-medium text-sm mb-2">Key Responsibilities:</h4>
                     <ul className="space-y-1">
                       {project.responsibilities.map((responsibility, idx) => (
-                        <li key={idx} className="text-gray-300 dark:text-gray-300 light:text-blue-700 text-xs flex items-start">
-                          <span className="text-purple-400 dark:text-purple-400 light:text-blue-600 mr-2">•</span>
+                        <li key={idx} className="text-blue-700 dark:text-gray-300 text-xs flex items-start">
+                          <span className="text-blue-600 dark:text-purple-400 mr-2">•</span>
                           {responsibility}
                         </li>
                       ))}
@@ -207,7 +208,7 @@ export default function Projects() {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-slate-800 dark:bg-slate-800 light:bg-blue-100 text-purple-400 dark:text-purple-400 light:text-blue-600 px-3 py-1 rounded-full text-xs font-medium"
+                      className="bg-blue-100 dark:bg-slate-800 text-blue-600 dark:text-purple-400 px-3 py-1 rounded-full text-xs font-medium"
                     >
                       {tech}
                     </span>
@@ -253,7 +254,7 @@ export default function Projects() {
             href="https://github.com/codebydravit"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-700 light:bg-blue-600 light:hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-purple-600 dark:hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300"
           >
             <Code size={20} />
             View More Projects

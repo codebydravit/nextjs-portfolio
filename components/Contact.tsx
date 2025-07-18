@@ -65,7 +65,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className=" py-20 bg-slate-800/50 dark:bg-slate-800/50 light:bg-blue-50/80">
+    <section id="contact" className=" py-20 bg-blue-50/80 dark:bg-slate-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -74,11 +74,11 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-white light:text-blue-900 mb-6">
-            Get In <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">Touch</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-6">
+            Get In <span className="text-blue-600 dark:text-purple-400">Touch</span>
           </h2>
-          <div className="w-20 h-1 bg-purple-400 dark:bg-purple-400 light:bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-gray-300 dark:text-gray-300 light:text-blue-700 text-lg max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-blue-600 dark:bg-purple-400 mx-auto mb-6"></div>
+          <p className="text-blue-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
             Available for AI Engineering roles and full-stack development opportunities. Let's discuss how I can help build your next GenAI application or scalable API solution.
           </p>
         </motion.div>
@@ -91,48 +91,48 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold text-white dark:text-white light:text-blue-900 mb-8">Hire Me</h3>
+            <h3 className="text-2xl font-semibold text-blue-900 dark:text-white mb-8">Hire Me</h3>
             
             <div className="space-y-6">
               <div className="flex items-center">
-                <div className="p-3 bg-purple-600 dark:bg-purple-600 light:bg-blue-600 rounded-lg mr-4">
+                <div className="p-3 bg-blue-600 dark:bg-purple-600 rounded-lg mr-4">
                   <Mail size={24} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-gray-400 dark:text-gray-400 light:text-blue-600 text-sm">Email</p>
-                  <p className="text-white dark:text-white light:text-blue-900">dravit162@gmail.com</p>
+                  <p className="text-blue-600 dark:text-gray-400 text-sm">Email</p>
+                  <p className="text-blue-900 dark:text-white">dravit162@gmail.com</p>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <div className="p-3 bg-purple-600 dark:bg-purple-600 light:bg-blue-600 rounded-lg mr-4">
+                <div className="p-3 bg-blue-600 dark:bg-purple-600 rounded-lg mr-4">
                   <MapPin size={24} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-gray-400 dark:text-gray-400 light:text-blue-600 text-sm">Location</p>
-                  <p className="text-white dark:text-white light:text-blue-900">Chennai | Remote Available</p>
+                  <p className="text-blue-600 dark:text-gray-400 text-sm">Location</p>
+                  <p className="text-blue-900 dark:text-white">Chennai | Remote Available</p>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <div className="p-3 bg-purple-600 dark:bg-purple-600 light:bg-blue-600 rounded-lg mr-4">
+                <div className="p-3 bg-blue-600 dark:bg-purple-600 rounded-lg mr-4">
                   <span className="text-white text-xl">💼</span>
                 </div>
                 <div>
-                  <p className="text-gray-400 dark:text-gray-400 light:text-blue-600 text-sm">Availability</p>
-                  <p className="text-white dark:text-white light:text-blue-900">AI Engineering & Full-Stack Roles</p>
+                  <p className="text-blue-600 dark:text-gray-400 text-sm">Availability</p>
+                  <p className="text-blue-900 dark:text-white">AI Engineering & Full-Stack Roles</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8">
-              <h4 className="text-lg font-semibold text-white dark:text-white light:text-blue-900 mb-4">Follow Me</h4>
+              <h4 className="text-lg font-semibold text-blue-900 dark:text-white mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 <a
                   href="https://github.com/codebydravit"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-slate-700 hover:bg-purple-600 dark:bg-slate-700 dark:hover:bg-purple-600 light:bg-blue-200 light:hover:bg-blue-600 text-white dark:text-white light:text-blue-900 light:hover:text-white rounded-lg transition-colors duration-300"
+                  className="p-3 bg-blue-200 hover:bg-blue-600 hover:text-white dark:bg-slate-700 dark:hover:bg-purple-600 text-blue-900 dark:text-white rounded-lg transition-colors duration-300"
                 >
                   <Github size={24} />
                 </a>
@@ -140,7 +140,7 @@ export default function Contact() {
                   href="https://linkedin.com/in/dravit"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-slate-700 hover:bg-purple-600 dark:bg-slate-700 dark:hover:bg-purple-600 light:bg-blue-200 light:hover:bg-blue-600 text-white dark:text-white light:text-blue-900 light:hover:text-white rounded-lg transition-colors duration-300"
+                  className="p-3 bg-blue-200 hover:bg-blue-600 hover:text-white dark:bg-slate-700 dark:hover:bg-purple-600 text-blue-900 dark:text-white rounded-lg transition-colors duration-300"
                 >
                   <Linkedin size={24} />
                 </a>
@@ -158,7 +158,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 dark:text-gray-300 light:text-blue-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-blue-700 dark:text-gray-300 mb-2">
                     Name
                   </label>
                   <div className="relative">
@@ -166,13 +166,13 @@ export default function Contact() {
                       type="text"
                       id="name"
                       {...register('name')}
-                      className={`w-full px-4 py-3 bg-slate-900 border rounded-lg text-white placeholder-gray-400 focus:outline-none transition-all duration-300 ${
+                      className={`w-full px-4 py-3 bg-white dark:bg-slate-900 border rounded-lg text-blue-900 dark:text-white placeholder-blue-400 dark:placeholder-gray-400 focus:outline-none transition-all duration-300 ${
                         errors.name 
                           ? 'border-red-500 focus:border-red-500'
                           : isFieldValid('name')
                           ? 'border-green-500 focus:border-green-500'
-                          : 'border-slate-700 focus:border-purple-500 dark:bg-slate-900 dark:border-slate-700 dark:focus:border-purple-500 dark:text-white dark:placeholder-gray-400 light:bg-white light:border-blue-200 light:focus:border-blue-500 light:text-blue-900 light:placeholder-blue-400'
-                      } dark:bg-slate-900 dark:border-slate-700 dark:text-white dark:placeholder-gray-400 light:bg-white light:border-blue-200 light:text-blue-900 light:placeholder-blue-400`}
+                          : 'border-blue-200 focus:border-blue-500 dark:border-slate-700 dark:focus:border-purple-500'
+                      }`}
                       placeholder="Your Name"
                     />
                     {isFieldValid('name') && (
@@ -186,7 +186,7 @@ export default function Contact() {
                   )}
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 dark:text-gray-300 light:text-blue-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-blue-700 dark:text-gray-300 mb-2">
                     Email
                   </label>
                   <div className="relative">
@@ -194,13 +194,13 @@ export default function Contact() {
                       type="email"
                       id="email"
                       {...register('email')}
-                      className={`w-full px-4 py-3 bg-slate-900 border rounded-lg text-white placeholder-gray-400 focus:outline-none transition-all duration-300 ${
+                      className={`w-full px-4 py-3 bg-white dark:bg-slate-900 border rounded-lg text-blue-900 dark:text-white placeholder-blue-400 dark:placeholder-gray-400 focus:outline-none transition-all duration-300 ${
                         errors.email 
                           ? 'border-red-500 focus:border-red-500'
                           : isFieldValid('email')
                           ? 'border-green-500 focus:border-green-500'
-                          : 'border-slate-700 focus:border-purple-500'
-                      } dark:bg-slate-900 dark:border-slate-700 dark:text-white dark:placeholder-gray-400 light:bg-white light:border-blue-200 light:text-blue-900 light:placeholder-blue-400`}
+                          : 'border-blue-200 focus:border-blue-500 dark:border-slate-700 dark:focus:border-purple-500'
+                      }`}
                       placeholder="your.email@company.com"
                     />
                     {isFieldValid('email') && (
@@ -216,7 +216,7 @@ export default function Contact() {
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 dark:text-gray-300 light:text-blue-700 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-blue-700 dark:text-gray-300 mb-2">
                   Subject
                 </label>
                 <div className="relative">
@@ -224,13 +224,13 @@ export default function Contact() {
                     type="text"
                     id="subject"
                     {...register('subject')}
-                    className={`w-full px-4 py-3 bg-slate-900 border rounded-lg text-white placeholder-gray-400 focus:outline-none transition-all duration-300 ${
+                    className={`w-full px-4 py-3 bg-white dark:bg-slate-900 border rounded-lg text-blue-900 dark:text-white placeholder-blue-400 dark:placeholder-gray-400 focus:outline-none transition-all duration-300 ${
                       errors.subject 
                         ? 'border-red-500 focus:border-red-500'
                         : isFieldValid('subject')
                         ? 'border-green-500 focus:border-green-500'
-                        : 'border-slate-700 focus:border-purple-500'
-                    } dark:bg-slate-900 dark:border-slate-700 dark:text-white dark:placeholder-gray-400 light:bg-white light:border-blue-200 light:text-blue-900 light:placeholder-blue-400`}
+                        : 'border-blue-200 focus:border-blue-500 dark:border-slate-700 dark:focus:border-purple-500'
+                    }`}
                     placeholder="AI Project Collaboration / Job Opportunity"
                   />
                   {isFieldValid('subject') && (
@@ -245,7 +245,7 @@ export default function Contact() {
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 dark:text-gray-300 light:text-blue-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-blue-700 dark:text-gray-300 mb-2">
                   Message
                 </label>
                 <div className="relative">
@@ -253,13 +253,13 @@ export default function Contact() {
                     id="message"
                     {...register('message')}
                     rows={5}
-                    className={`w-full px-4 py-3 bg-slate-900 border rounded-lg text-white placeholder-gray-400 focus:outline-none transition-all duration-300 resize-none ${
+                    className={`w-full px-4 py-3 bg-white dark:bg-slate-900 border rounded-lg text-blue-900 dark:text-white placeholder-blue-400 dark:placeholder-gray-400 focus:outline-none transition-all duration-300 resize-none ${
                       errors.message 
                         ? 'border-red-500 focus:border-red-500'
                         : isFieldValid('message')
                         ? 'border-green-500 focus:border-green-500'
-                        : 'border-slate-700 focus:border-purple-500'
-                    } dark:bg-slate-900 dark:border-slate-700 dark:text-white dark:placeholder-gray-400 light:bg-white light:border-blue-200 light:text-blue-900 light:placeholder-blue-400`}
+                        : 'border-blue-200 focus:border-blue-500 dark:border-slate-700 dark:focus:border-purple-500'
+                    }`}
                     placeholder="Tell me about your GenAI application, full-stack project, or AI engineering opportunity!"
                   />
                   {isFieldValid('message') && (
@@ -278,8 +278,8 @@ export default function Contact() {
                 disabled={!isValid || isSubmitting}
                 className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${
                   !isValid || isSubmitting
-                    ? 'bg-slate-600 cursor-not-allowed text-gray-400 dark:bg-slate-600 light:bg-blue-300'
-                    : 'bg-purple-600 hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-700 light:bg-blue-600 light:hover:bg-blue-700 text-white hover:scale-105'
+                    ? 'bg-blue-300 dark:bg-slate-600 cursor-not-allowed text-gray-400'
+                    : 'bg-blue-600 hover:bg-blue-700 dark:bg-purple-600 dark:hover:bg-purple-700 text-white hover:scale-105'
                 }`}
               >
                 {isSubmitting ? (
@@ -305,8 +305,9 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-center mt-16 pt-8 border-t border-slate-700"
+          className="text-center mt-16 pt-8 border-t border-blue-200 dark:border-slate-700"
         >
-          <p className="text-gray-400 dark:text-gray-400 light:text-blue-600">
+          <p className="text-blue-600 dark:text-gray-400">
             © 2024 Dravit V
           </p>
         </motion.div>

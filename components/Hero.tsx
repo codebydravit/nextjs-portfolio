@@ -44,11 +44,11 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">Dravit V</span> — AI Engineer & Full-Stack Developer
+              <span className="text-blue-600 dark:text-purple-400">Dravit V</span> — AI Engineer & Full-Stack Developer
             </motion.h1>
 
             <motion.p
-              className="text-lg md:text-xl text-gray-300 dark:text-gray-300 light:text-blue-700 mb-8 max-w-4xl"
+              className="text-lg md:text-xl text-blue-700 dark:text-gray-300 mb-8 max-w-4xl"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -59,21 +59,21 @@ export default function Hero() {
             </motion.p>
 
             <motion.div
-              className="flex flex-wrap justify-center md:justify-start gap-4 mb-8 text-gray-300 dark:text-gray-300 light:text-blue-700"
+              className="flex flex-wrap justify-center md:justify-start gap-4 mb-8 text-blue-700 dark:text-gray-300"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
               <div className="flex items-center gap-2">
-                <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">📍</span>
+                <span className="text-blue-600 dark:text-purple-400">📍</span>
                 Chennai
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">📧</span>
+                <span className="text-blue-600 dark:text-purple-400">📧</span>
                 dravit162@gmail.com
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">🌐</span>
+                <span className="text-blue-600 dark:text-purple-400">🌐</span>
                 Remote Available
               </div>
             </motion.div>
@@ -86,7 +86,7 @@ export default function Hero() {
             >
               <button
                 onClick={scrollToAbout}
-                className="bg-purple-600 hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-700 light:bg-blue-600 light:hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 shadow-lg hover:shadow-xl"
+                className="bg-blue-600 hover:bg-blue-700 dark:bg-purple-600 dark:hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 shadow-lg hover:shadow-xl"
               >
                 Learn More About Me
               </button>
@@ -95,7 +95,7 @@ export default function Hero() {
                   href="https://github.com/codebydravit"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-slate-800 hover:bg-slate-700 dark:bg-slate-800 dark:hover:bg-slate-700 light:bg-blue-200 light:hover:bg-blue-300 text-white dark:text-white light:text-blue-900 rounded-lg transition-colors duration-300"
+                  className="p-3 bg-blue-200 hover:bg-blue-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-blue-900 dark:text-white rounded-lg transition-colors duration-300"
                 >
                   <Github size={24} />
                 </a>
@@ -103,13 +103,13 @@ export default function Hero() {
                   href="https://linkedin.com/in/dravit"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-slate-800 hover:bg-slate-700 dark:bg-slate-800 dark:hover:bg-slate-700 light:bg-blue-200 light:hover:bg-blue-300 text-white dark:text-white light:text-blue-900 rounded-lg transition-colors duration-300"
+                  className="p-3 bg-blue-200 hover:bg-blue-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-blue-900 dark:text-white rounded-lg transition-colors duration-300"
                 >
                   <Linkedin size={24} />
                 </a>
                 <a
                   href="mailto:dravit162@gmail.com"
-                  className="p-3 bg-slate-800 hover:bg-slate-700 dark:bg-slate-800 dark:hover:bg-slate-700 light:bg-blue-200 light:hover:bg-blue-300 text-white dark:text-white light:text-blue-900 rounded-lg transition-colors duration-300"
+                  className="p-3 bg-blue-200 hover:bg-blue-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-blue-900 dark:text-white rounded-lg transition-colors duration-300"
                 >
                   <Mail size={24} />
                 </a>
@@ -122,7 +122,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <motion.button
         onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white dark:text-white/60 dark:hover:text-white light:text-blue-600/60 light:hover:text-blue-900 transition-colors duration-300"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-blue-600/60 hover:text-blue-900 dark:text-white/60 dark:hover:text-white transition-colors duration-300"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >

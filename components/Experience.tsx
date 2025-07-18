@@ -49,14 +49,14 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Work <span className="text-purple-400">Experience</span>
+            Work <span className="text-blue-600 dark:text-purple-400">Experience</span>
           </h2>
-          <div className="w-20 h-1 bg-purple-400 mx-auto"></div>
+          <div className="w-20 h-1 bg-blue-600 dark:bg-purple-400 mx-auto"></div>
         </motion.div>
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-slate-700"></div>
+          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-blue-300 dark:bg-slate-700"></div>
 
           {experiences.map((experience, index) => (
             <motion.div
@@ -70,7 +70,7 @@ export default function Experience() {
               }`}
             >
               {/* Timeline dot */}
-              <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-900 z-10"></div>
+              <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-blue-500 dark:bg-purple-500 rounded-full border-4 border-blue-50 dark:border-slate-900 z-10"></div>
               {/* Logo */}
               <div className="hidden md:flex w-full md:w-6/12 flex justify-center mb-4 md:mb-0 ">
                 {experience.logo && (
@@ -91,34 +91,35 @@ export default function Experience() {
               </div>
               {/* Content */}
               <div className={`ml-12 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
-                <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 hover:border-purple-500 transition-colors duration-300">
+                <div className="bg-white/80 dark:bg-slate-900/50 p-6 rounded-xl border border-blue-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-purple-500 transition-colors duration-300">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="text-xl font-semibold text-white mb-1">{experience.title}</h3>
-                      <p className="text-purple-400 font-medium">{experience.company}</p>
+                      <h3 className="text-xl font-semibold text-blue-900 dark:text-white mb-1">{experience.title}</h3>
+                      <p className="text-blue-600 dark:text-purple-400 font-medium">{experience.company}</p>
                     </div>
                     <div className="text-right">
-                      <div className="flex items-center text-gray-400 text-sm mb-1">
+                      <div className="flex items-center text-blue-600 dark:text-gray-400 text-sm mb-1">
                         <Calendar size={14} className="hidden md:flex mr-1" />
                         {experience.period}
                       </div>
                       <div className="hidden md:flex items-center text-gray-400 text-sm ">
+                      <div className="hidden md:flex items-center text-blue-600 dark:text-gray-400 text-sm ">
                         <MapPin size={14} className="hidden md:flex mr-1" />
                         {experience.location}
                       </div>
                     </div>
                   </div>
                   
-                  <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+                  <p className="text-blue-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
                     {experience.description}
                   </p>
                   
                   <div className="space-y-2">
-                    <h4 className="text-white font-medium text-sm">Key Achievements:</h4>
+                    <h4 className="text-blue-900 dark:text-white font-medium text-sm">Key Achievements:</h4>
                     <ul className="space-y-1">
                       {experience.achievements.map((achievement, achievementIndex) => (
-                        <li key={achievementIndex} className="text-gray-300 text-sm flex items-start">
-                          <span className="text-purple-400 mr-2">•</span>
+                        <li key={achievementIndex} className="text-blue-700 dark:text-gray-300 text-sm flex items-start">
+                          <span className="text-blue-600 dark:text-purple-400 mr-2">•</span>
                           {achievement}
                         </li>
                       ))}

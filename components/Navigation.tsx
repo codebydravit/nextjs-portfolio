@@ -32,11 +32,11 @@ export default function Navigation({ activeSection }: NavigationProps) {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 dark:bg-slate-900/80 light:bg-blue-50/90 backdrop-blur-md border-b border-slate-700 dark:border-slate-700 light:border-blue-200 overflow-x-hidden">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-50/90 dark:bg-slate-900/80 backdrop-blur-md border-b border-blue-200 dark:border-slate-700 overflow-x-hidden transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="text-2xl font-bold text-white dark:text-white light:text-blue-900 whitespace-nowrap">
-            <span className="text-purple-400 dark:text-purple-400 light:text-blue-600">D</span>ravit V
+          <div className="text-2xl font-bold text-blue-900 dark:text-white whitespace-nowrap">
+            <span className="text-blue-600 dark:text-purple-400">D</span>ravit V
           </div>
 
           {/* Desktop Menu */}
@@ -48,8 +48,8 @@ export default function Navigation({ activeSection }: NavigationProps) {
                 onClick={() => scrollToSection(item.id)}
                 className={`text-sm font-medium transition-colors duration-300 ${
                   activeSection === item.id
-                    ? 'text-purple-400 dark:text-purple-400 light:text-blue-600'
-                    : 'text-gray-300 hover:text-white dark:text-gray-300 dark:hover:text-white light:text-blue-700 light:hover:text-blue-900'
+                    ? 'text-blue-600 dark:text-purple-400'
+                    : 'text-blue-700 hover:text-blue-900 dark:text-gray-300 dark:hover:text-white'
                 }`}
               >
                 {item.label}
@@ -58,7 +58,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
             <a
               href="/resume-download/Dravit_1Year_Experience_AI_Developer_Resume.pdf"
               download
-              className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-700 light:bg-blue-600 light:hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl whitespace-nowrap font-semibold"
+              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-purple-600 dark:hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl whitespace-nowrap font-semibold"
             >
               <Download size={16} />
               Hire Me
@@ -68,7 +68,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white dark:text-white light:text-blue-900"
+            className="md:hidden text-blue-900 dark:text-white"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -82,7 +82,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="w-full overflow-hidden md:hidden bg-slate-800 dark:bg-slate-800 light:bg-blue-100 border-t border-slate-700 dark:border-slate-700 light:border-blue-200"
+              className="w-full overflow-hidden md:hidden bg-blue-100 dark:bg-slate-800 border-t border-blue-200 dark:border-slate-700"
             >
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <div className="px-3 py-2">
@@ -94,8 +94,8 @@ export default function Navigation({ activeSection }: NavigationProps) {
                     onClick={() => scrollToSection(item.id)}
                     className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
                       activeSection === item.id
-                        ? 'text-purple-400 bg-slate-700 dark:text-purple-400 dark:bg-slate-700 light:text-blue-600 light:bg-blue-200'
-                        : 'text-gray-300 hover:text-white hover:bg-slate-700 dark:text-gray-300 dark:hover:text-white dark:hover:bg-slate-700 light:text-blue-700 light:hover:text-blue-900 light:hover:bg-blue-200'
+                        ? 'text-blue-600 bg-blue-200 dark:text-purple-400 dark:bg-slate-700'
+                        : 'text-blue-700 hover:text-blue-900 hover:bg-blue-200 dark:text-gray-300 dark:hover:text-white dark:hover:bg-slate-700'
                     }`}
                   >
                     {item.label}
@@ -104,7 +104,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
                 <a
                   href="/resume-download/Dravit_1Year_Experience_AI_Developer_Resume.pdf"
                   download
-                  className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-700 light:bg-blue-600 light:hover:bg-blue-700 text-white px-3 py-2 rounded-md transition-colors duration-300 shadow-lg font-semibold"
+                  className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-purple-600 dark:hover:bg-purple-700 text-white px-3 py-2 rounded-md transition-colors duration-300 shadow-lg font-semibold"
                 >
                   <Download size={16} />
                   Hire Me
