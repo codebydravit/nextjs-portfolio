@@ -17,6 +17,7 @@ export default function About() {
     { icon: Zap, label: 'APIs Deployed', value: '10+' },
     { icon: Calendar, label: 'Available', value: 'Now' },
   ];
+
   return (
     <section id="about" className="py-20 bg-blue-50/80 dark:bg-slate-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -238,8 +239,8 @@ export default function About() {
                 </p>
               </motion.div>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

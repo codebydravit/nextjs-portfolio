@@ -33,6 +33,7 @@ export default function Hero() {
             alt="Dravit V"
             width={220}
             height={220}
+            priority
             className="rounded-full border-4 border-white shadow-md"
           />
 

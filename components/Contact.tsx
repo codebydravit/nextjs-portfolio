@@ -304,9 +304,8 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mt-16 pt-8 border-t border-slate-700"
-          className="text-center mt-16 pt-8 border-t border-blue-200 dark:border-slate-700"
-        >
+          className="text-center mt-16 pt-8 border-t border-blue-200 dark:border-slate-700"       
+          >
           <p className="text-blue-600 dark:text-gray-400">
             © 2024 Dravit V
           </p>
