@@ -42,20 +42,17 @@ export default function About() {
                   building GenAI applications, intelligent chatbots, and scalable APIs that solve real-world problems. 
                   My expertise spans the entire development lifecycle from AI model integration to production deployment.
                 </p>
-                <p className="text-gray-300 dark:text-gray-300 light:text-blue-700 mb-6 leading-relaxed">
                 <p className="text-blue-700 dark:text-gray-300 mb-6 leading-relaxed">
                   I excel at combining AI technologies like LangChain and OpenAI with robust full-stack solutions 
                   using FastAPI, React, and Azure. My experience includes building enterprise-grade chatbots, 
                   RAG-based systems, and deploying scalable applications in production environments.
                 </p>
-                <p className="text-gray-300 dark:text-gray-300 light:text-blue-700 mb-6 leading-relaxed">
                 <p className="text-blue-700 dark:text-gray-300 mb-6 leading-relaxed">
                   My journey into AI engineering began with a fascination for solving complex problems through 
                   intelligent automation. I believe in building technology that not only works but makes a 
                   meaningful impact. Every project I work on is driven by the goal of creating solutions that 
                   are both technically excellent and genuinely useful for real-world applications.
                 </p>
-                <p className="text-gray-300 dark:text-gray-300 light:text-blue-700 leading-relaxed">
                 <p className="text-blue-700 dark:text-gray-300 leading-relaxed">
                   I'm passionate about bridging the gap between cutting-edge AI capabilities and practical, 
                   deployable solutions. Currently seeking opportunities where I can leverage my full-stack AI 
