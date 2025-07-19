@@ -11,8 +11,8 @@ export default function Skills() {
       id: 'ai',
       title: '🤖 GenAI',
       skills: [
-        { name: 'OpenAI', level: 90 },
-        { name: 'LangChain', level: 85 },
+        { name: 'OpenAI', level: 75 },
+        { name: 'LangChain', level: 75 },
         { name: 'RAG Systems', level: 80 },
         { name: 'Prompt Engineering', level: 90 },
         { name: 'Vector DBs', level: 75 },
@@ -22,9 +22,9 @@ export default function Skills() {
       id: 'backend',
       title: '⚙️ Backend',
       skills: [
-        { name: 'FastAPI', level: 90 },
-        { name: 'Python', level: 85 },
-        { name: 'REST API', level: 80 },
+        { name: 'FastAPI', level: 75 },
+        { name: 'Python', level: 70 },
+        // { name: 'REST API', level: 80 },
       ],
     },
     {
@@ -43,10 +43,10 @@ export default function Skills() {
       id: 'devops',
       title: '📡 DevOps / Infra',
       skills: [
-        { name: 'SSH', level: 80 },
-        { name: 'Azure', level: 75 },
+        // { name: 'SSH', level: 80 },
+        // { name: 'Azure', level: 60 },
         { name: 'Git & GitHub', level: 85 },
-        { name: 'Linux', level: 75 },
+        // { name: 'Linux', level: 50 },
       ],
     },
      {
@@ -63,12 +63,12 @@ export default function Skills() {
   ];
 
   const softSkills = [
-    { name: 'Problem Solving', level: 95 },
-    { name: 'Team Collaboration', level: 90 },
-    { name: 'Project Management', level: 85 },
-    { name: 'Communication', level: 88 },
-    { name: 'Adaptability', level: 92 },
-    { name: 'Critical Thinking', level: 90 },
+    { name: 'Problem Solving', level: 75 },
+    { name: 'Team Collaboration', level: 75 },
+    // { name: 'Project Management', level: 60 },
+    // { name: 'Communication', level: 88 },
+    { name: 'Adaptability', level: 70 },
+    // { name: 'Critical Thinking', level: 90 },
   ];
 
   const categories = [
