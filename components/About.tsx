@@ -78,7 +78,7 @@ export default function About() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
                     <a
-                      href="/resume-download/Dravit_1Year_Experience_AI_Developer_Resume.pdf"
+                      href="/resume-download/Dravit_1Year_Experience_AI_Engineer_Resume.pdf"
                       download
                       className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-purple-600 dark:hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                     >

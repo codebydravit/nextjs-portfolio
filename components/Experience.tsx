@@ -21,7 +21,7 @@ export default function Experience() {
       logo: '/logos/zgrow.png',
     },
     {
-      title: 'AI Developer Intern',
+      title: 'AI Intern',
       company: 'Vincilium',
       location: 'Remote • Chennai • Full-time',
       period: 'Feb 2024 - Feb 2024',

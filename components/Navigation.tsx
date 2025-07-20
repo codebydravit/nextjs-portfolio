@@ -56,7 +56,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
               </button>
             ))}
             <a
-              href="/resume-download/Dravit_1Year_Experience_AI_Developer_Resume.pdf"
+              href="/resume-download/Dravit_1Year_Experience_AI_Engineer_Resume.pdf"
               download
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-purple-600 dark:hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl whitespace-nowrap font-semibold"
             >
@@ -102,7 +102,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
                   </button>
                 ))}
                 <a
-                  href="/resume-download/Dravit_1Year_Experience_AI_Developer_Resume.pdf"
+                  href="/resume-download/Dravit_1Year_Experience_AI_Engineer_Resume.pdf"
                   download
                   className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-purple-600 dark:hover:bg-purple-700 text-white px-3 py-2 rounded-md transition-colors duration-300 shadow-lg font-semibold"
                 >
