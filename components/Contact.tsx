@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -134,7 +135,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="p-3 bg-blue-200 hover:bg-blue-600 hover:text-white dark:bg-slate-700 dark:hover:bg-purple-600 text-blue-900 dark:text-white rounded-lg transition-colors duration-300"
                 >
-                  <Github size={24} />
+                  <FaGithub size={24} />
                 </a>
                 <a
                   href="https://linkedin.com/in/dravit"
@@ -142,7 +143,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="p-3 bg-blue-200 hover:bg-blue-600 hover:text-white dark:bg-slate-700 dark:hover:bg-purple-600 text-blue-900 dark:text-white rounded-lg transition-colors duration-300"
                 >
-                  <Linkedin size={24} />
+                  <FaLinkedin size={24} />
                 </a>
               </div>
             </div>

@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Mail } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -98,7 +99,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="p-3 bg-blue-200 hover:bg-blue-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-blue-900 dark:text-white rounded-lg transition-colors duration-300"
                 >
-                  <Github size={24} />
+                  <FaGithub size={24} />
                 </a>
                 <a
                   href="https://linkedin.com/in/dravit"
@@ -106,7 +107,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="p-3 bg-blue-200 hover:bg-blue-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-blue-900 dark:text-white rounded-lg transition-colors duration-300"
                 >
-                  <Linkedin size={24} />
+                  <FaLinkedin size={24} />
                 </a>
                 <a
                   href="mailto:dravit162@gmail.com"

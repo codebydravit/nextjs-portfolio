@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Code } from 'lucide-react';
+import { ExternalLink, Code } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { useState } from 'react';
 
 export default function Projects() {
@@ -221,7 +222,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors duration-300"
                   >
-                    <Github size={16} />
+                    <FaGithub size={16} />
                     Code
                   </a>
                   {false && 
